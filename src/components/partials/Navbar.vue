@@ -28,17 +28,18 @@ nav {
   align-items: center;
   
   a.router-link-exact-active {
-    color: var(--color-text);
+    color: hsla(160, 100%, 37%, 1);
+    transition: color 0.4s;
   }
-
-  a.router-link-exact-active:hover {
-    background-color: transparent;
+  a .router-link-exact-active:hover {
+    background-color: lightgrey;
   }
 
   a {
     display: inline-block;
     padding: 0 2rem;
     border-left: 1px solid var(--color-border);
+    text-decoration: none;
   }
 
   a:first-of-type {
