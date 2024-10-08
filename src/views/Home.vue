@@ -4,7 +4,7 @@ export default {
   data() {
     return {
       jumboBackground: '../src/assets/img/jumbo_back.jpg',
-      avatar: '../src/assets/img/download.png',
+      avatar: '../src/assets/img/avatar.jpg',
     };
   }
 }
@@ -56,7 +56,7 @@ export default {
   height: calc(100vh - 50px);
   background-image: url('../assets/img/jumbo_back.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
@@ -64,14 +64,14 @@ export default {
 
   .container{
     background-color: rgb(171, 167, 167,0.2);
-    width: 1500px;
+    max-width: 1120px;
     margin: 0 auto;
-    height: 500px;
+    //height: 500px;
     display: flex;
     justify-content: space-between;
 
     .info{
-      max-width: 22%;
+      //max-width: 200px;
       padding: 10px 0;
       display: flex;
       flex-direction: column;
@@ -81,6 +81,7 @@ export default {
       }
       h1{
       color: rgb(30, 30, 30);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     }
 
       .btn{
@@ -90,6 +91,7 @@ export default {
         border: 1px solid black;
         box-shadow: 1px 1px lightgray;
         color: rgb(30, 30, 30);
+        margin: 20px 0;
         align-self: flex-start;
         transition: all 0.2s;
         &:hover{
@@ -117,11 +119,47 @@ export default {
 
     /* AVATAR */
     .avatar{
+      align-self: center;
       img{
-        width: 120%;
+        width: 300px;
         border-radius: 50%;
+        
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+      .jumbotron{
+        display: inline-block;
+      }
+    .container {
+      flex-direction: column;
+      padding: 0 10px;
+
+      .info {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .btn{
+        align-self: center;
+    }
+      }
+
+      .avatar {
+        img {
+          width: 100px;
+        }
+      }
+
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+      }
+    }
 }
 </style>
