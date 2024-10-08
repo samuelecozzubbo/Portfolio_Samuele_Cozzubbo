@@ -4,7 +4,7 @@ export default {
   data() {
     return {
       jumboBackground: '../src/assets/img/jumbo_back.jpg',
-      avatar: '../src/assets/img/avatar.jpg',
+      avatar: 'img/avatar.jpg',
     };
   }
 }
