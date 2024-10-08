@@ -28,9 +28,9 @@ export default {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deserunt temporibus, facilis nobis necessitatibus voluptatem velit ut repellendus. Suscipit necessitatibus eaque ab quas sint commodi dolorum totam beatae omnis repudiandae.
               </p>
             </div>
-            <a class="btn">
-            About me
-            </a>
+            <routerLink class="btn" :to="{name:'about' }">
+              About me
+            </routerLink>
             <div class="links">
                 <ul>
                   <li class="icon">
@@ -86,6 +86,7 @@ export default {
     }
 
       .btn{
+        text-decoration: none;
         background:hsla(160, 100%, 37%, 1);
         border-radius: 25px;
         padding: 10px 20px;
