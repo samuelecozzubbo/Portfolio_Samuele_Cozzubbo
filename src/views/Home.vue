@@ -65,17 +65,18 @@ export default {
   .container{
     background-color: rgb(171, 167, 167,0.2);
     max-width: 1120px;
+    padding: 0 20px;
     margin: 0 auto;
     //height: 500px;
     display: flex;
     justify-content: space-between;
 
     .info{
-      //max-width: 200px;
+      max-width: 40%;
       padding: 10px 0;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      align-items: flex-start;
       .name{
         font-weight: bold;
       }
@@ -92,7 +93,6 @@ export default {
         box-shadow: 1px 1px lightgray;
         color: rgb(30, 30, 30);
         margin: 20px 0;
-        align-self: flex-start;
         transition: all 0.2s;
         &:hover{
           cursor: pointer;
@@ -135,21 +135,18 @@ export default {
       }
     .container {
       flex-direction: column;
-      padding: 0 10px;
-
+      
       .info {
-        align-items: center;
-        text-align: center;
+        max-width: 80%!important;
         margin-bottom: 20px;
-
-        .btn{
-        align-self: center;
-    }
       }
 
       .avatar {
         img {
-          width: 100px;
+          position: absolute;
+          max-width: 100px;
+          top: 60px;
+          right: 20px;
         }
       }
 
