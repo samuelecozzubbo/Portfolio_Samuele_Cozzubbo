@@ -140,17 +140,9 @@ export default {
       
       
       .info {
+        text-align: center;
         max-width: 80%!important;
         margin-bottom: 20px;
-      }
-
-      .avatar {
-        img {
-          position: absolute;
-          max-width: 100px;
-          top: 60px;
-          right: 20px;
-        }
       }
 
       .hamburger {

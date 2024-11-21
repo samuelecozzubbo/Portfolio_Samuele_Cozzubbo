@@ -1,10 +1,12 @@
 <script>
 import Jumbotron from '@/components/partials/Jumbotron.vue';
+import Projects from '@/components/partials/Projects.vue';
 
 export default {
   name: 'Home',
   components: {
     Jumbotron,
+    Projects,
   },
 }
 </script>
@@ -12,6 +14,7 @@ export default {
 <template>
   <main>
    <Jumbotron/>
+   <Projects/>
   </main>
 </template>
 
